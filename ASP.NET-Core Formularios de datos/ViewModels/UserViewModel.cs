@@ -16,6 +16,7 @@ namespace ASP.NET_Core_Formularios_de_datos.ViewModels
 
         [Required(ErrorMessage = "El campo {0} es obligatorio")]
         [StringLength(20, MinimumLength = 3,ErrorMessage = "La longitud debe estar entre {2} y {1} caracteres")]
+        [Remote("AvailableNickname","User",ErrorMessage = "El nombre ya esta ocupado")]
         [Display(Name = "Nick")]
         public string Nickname { get; set; }
 

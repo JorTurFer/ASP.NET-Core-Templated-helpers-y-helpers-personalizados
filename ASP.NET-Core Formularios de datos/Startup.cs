@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ASP.NET_Core_Formularios_de_datos.Models.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -22,6 +23,7 @@ namespace ASP.NET_Core_Formularios_de_datos
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddScoped<IUserServices, UserServices>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
