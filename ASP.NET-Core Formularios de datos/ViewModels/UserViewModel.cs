@@ -15,7 +15,7 @@ namespace ASP.NET_Core_Formularios_de_datos.ViewModels
         public string Name { get; set; }
 
         [Required(ErrorMessage = "El campo {0} es obligatorio")]
-        [StringLength(20, MinimumLength = 3,ErrorMessage = "La longitud debe estar entre {1} y {2} caracteres")]
+        [StringLength(20, MinimumLength = 3,ErrorMessage = "La longitud debe estar entre {2} y {1} caracteres")]
         [Display(Name = "Nick")]
         public string Nickname { get; set; }
 
@@ -29,15 +29,16 @@ namespace ASP.NET_Core_Formularios_de_datos.ViewModels
         [EmailAddress(ErrorMessage = "El campo {0} debe ser una direccion de email valida")]
         [DataType(DataType.EmailAddress)]
         [Display(Name = "Email")]
-        public string EMail { get; set; }
+        public string Email { get; set; }
 
         [Required(ErrorMessage = "El campo {0} es obligatorio")]
-        [StringLength(20, MinimumLength = 5, ErrorMessage = "La longitud debe estar entre {1} y {2} caracteres")]
+        [StringLength(20, MinimumLength = 5, ErrorMessage = "La longitud debe estar entre {2} y {1} caracteres")]
         [DataType(DataType.Password)]
         [Display(Name = "Contraseña" )]
         public string Password { get; set; }
 
-        [Compare("password",ErrorMessage = "Las contraseñas deben coincidir")]
+        [Compare("Password", ErrorMessage = "Las contraseñas deben coincidir")]
+        [Display(Name = "Repeticion de contraseña")]
         public string RePassword { get; set; }
 
         [DataType(DataType.Date)]
@@ -45,6 +46,7 @@ namespace ASP.NET_Core_Formularios_de_datos.ViewModels
         public DateTime Birthdate { get; set; }
 
         [HiddenInput(DisplayValue = false)]
+        [Display(Name = "Activo")]
         public bool Enabled { get; set; }
     }
 }
