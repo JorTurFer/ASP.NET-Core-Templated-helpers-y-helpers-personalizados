@@ -19,7 +19,7 @@ namespace ASP.NET_Core_Formularios_de_datos.Controllers
             m_userServices = services;
         }
         
-        [Route("edit")]
+        [Route("profile")]
         public IActionResult Edit()
         {
             ViewBag.UserTypes = UserType.GetUserTypes();
@@ -27,7 +27,7 @@ namespace ASP.NET_Core_Formularios_de_datos.Controllers
         }
 
         [HttpPost]
-        [Route("edit")]
+        [Route("profile")]
         public IActionResult Edit(UserViewModel vm)
         {
             //Comprobacion de disponibilidad (aunque se comprueba en remote, tengo que comprobarlo en el controlador tambien)
