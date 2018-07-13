@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <RootNamespace>ASP.NET-Core_Formularios_de_datos</RootNamespace>
+    <RootNamespace>ASP.NET_Core_Formularios_de_datos</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,10 +11,6 @@
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ViewModels\" />
   </ItemGroup>
 
 </Project>
