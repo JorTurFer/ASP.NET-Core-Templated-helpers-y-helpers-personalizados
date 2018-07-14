@@ -44,7 +44,7 @@ namespace ASP.NET_Core_Formularios_de_datos.ViewModels
 
         [DataType(DataType.Date)]
         [Display(Name = "Fecha de nacimiento")]
-        public DateTime Birthdate { get; set; }
+        public DateTime? Birthdate { get; set; }
 
         [HiddenInput(DisplayValue = false)]
         [Display(Name = "Activo")]
