@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET-Core Formularios de datos", "ASP.NET-Core Formularios de datos\ASP.NET-Core Formularios de datos.csproj", "{B053ECE9-9607-48A4-AC51-8D95D7947E03}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET-Templated helpers y helpers personalizados", "ASP.NET-Templated helpers y helpers personalizados\ASP.NET-Templated helpers y helpers personalizados.csproj", "{B053ECE9-9607-48A4-AC51-8D95D7947E03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

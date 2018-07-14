@@ -2,7 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <RootNamespace>ASP.NET_Core_Formularios_de_datos</RootNamespace>
+    <RootNamespace>ASP.NET_Templated_helpers_y_helpers_personalizados</RootNamespace>
+    <AssemblyName>ASP.NET-Templated helpers y helpers personalizados</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
